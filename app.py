@@ -1,8 +1,4 @@
 import os
-
-# Exécuter le script de déploiement pour installer les dépendances
-os.system('./setup.sh')
-
 import streamlit as st
 from PIL import Image
 import numpy as np
