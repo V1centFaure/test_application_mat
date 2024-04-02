@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "test_application_mat",
+			"path": "."
+		},
+		{
+			"name": "best_model_try_2",
+			"path": "../Data_Prof_Session_3/guilhem/data/model/best_model_try_2"
+		}
+	],
+	"settings": {}
+}
