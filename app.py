@@ -1,8 +1,14 @@
+import os
+
+# Exécuter le script de déploiement pour installer les dépendances
+os.system('./setup.sh')
+
 import streamlit as st
 from PIL import Image
 import numpy as np
-import os
-import tensorflow as tf
+import tensorflow
+
+
 
 def preprocess(img):
         
@@ -26,7 +32,7 @@ def decouper_image(image, taille_cote = 64):
     saved_model_path = './data/best_model_try_2/mat64.h5'
 
     # Chargez le modèle SavedModel
-    model = tf.keras.models.load_model(saved_model_path)
+    model = tensorflow.keras.models.load_model(saved_model_path)
 
     # Obtenir les dimensions de l'image
     largeur, hauteur = image.size
